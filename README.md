@@ -5,7 +5,7 @@ With the GitHub pages everytime an individual pushes to master branch will the c
 
 If the user is adding code to the develop branch it will not apppear on the GitHub Page until a Pull Request (PR) has been created to merge the develop branch into the master branch. Below shows a Pull Request being created with develop branch merged into master branch.
 
-![Merging develop branch into Master branch](https://massgov.github.io/iframe-quickstart/Create-a-pull-request-to-merge-develop-branch-into-master-branch.png)
+![Merging develop branch into Master branch](https://massgov.github.io/iframe-quickstart/develop-master.png)
 
 ## Explanation of Mayflower
 Mayflower is an open source repository that was created to be used on the Mass.gov website theming. With Mayflower being an open source it allows multiple other agencies to have access to this theming. 
