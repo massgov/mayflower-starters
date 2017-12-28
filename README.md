@@ -45,16 +45,16 @@ To use Mayflower in theming components for a widget or application:
       <h2 class="ma__comp-heading" id="GUID9827924" tabindex="-1">Title text</h2>
       
       ```
-   1. Paste the code to the html page and replace the *Title Heading* 
+   1. Paste the code to the html page and replace the *Title Heading* and *id*
 
 Next steps to add CSS and Javascript to the html page:
    
  1. In the `<header> </header>` section the following will be added:
       ```
       
-      <link rel="stylesheet" href="https://s3.amazonaws.com/mayflower.digital.mass.gov/assets/css/base-theme-generated.css"  media="all" />
-      <link rel="stylesheet" href="https://s3.amazonaws.com/mayflower.digital.mass.gov/assets/css/index-generated.css" media="all" />
-      <script src="https://s3.amazonaws.com/mayflower.digital.mass.gov/assets/js/vendor/modernizr.js"></script>
+      <link rel="stylesheet" href="https://mayflower.digital.mass.gov/assets/css/base-theme-generated.css"  media="all" />
+      <link rel="stylesheet" href="https://mayflower.digital.mass.gov/assets/css/index-generated.css" media="all" />
+      <script src="https://mayflower.digital.mass.gov/assets/js/vendor/modernizr.js"></script>
 
       ```
     Explanation of adding the following CSS and Javascript files to the html page:
@@ -65,19 +65,19 @@ Next steps to add CSS and Javascript to the html page:
       ```
       
       <!--Notes that this Mayflower assets-->
-      <script src="https://s3.amazonaws.com/mayflower.digital.mass.gov/assets/js/index-generated.js"></script>
-      <script src="https://s3.amazonaws.com/mayflower.digital.mass.gov/assets/js/vendor-generated.js"></script>
-      
+      <script src="https://mayflower.digital.mass.gov/assets/js/vendor-generated.js"></script>
+      <script src="https://mayflower.digital.mass.gov/assets/js/index-generated.js"></script>
+  
       ```
       Explanation of adding the following Javascripts files to the html page 
-      * `index-generated.js` is all components within Mayflower 
       * `vendor-generated.js` is 3rd party dependecies such as jQuery.
+      * `index-generated.js` is all components within Mayflower 
    
 ## Links to Mayflower, GitHub, and GitHub Pages documentation
 
 ### Mayflower
 1. [Mayflower GitHub Repository](https://github.com/massgov/mayflower)
-1. [Mayflower website](http://mayflower.digital.mass.gov/) using the GitHub Pages to publish the website.
+1. [Mayflower website](https://mayflower.digital.mass.gov/) using the GitHub Pages to publish the website.
 1. [Example of Resposity which uses Mayflower (RMV Wait Time Widget)](https://github.com/massgov/rmvwaittime)
 
 ### GitHub
