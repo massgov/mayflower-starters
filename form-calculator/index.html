@@ -38,6 +38,82 @@
         </div>
       </div>
 
+      <h2 class="ma__comp-heading" tabindex="-1">Personal Information</h2>
+      <fieldset>
+        <label for="date-birth">Your date of birth</label>
+        <input
+                class="ma__input-date js-input-date"
+                name="date-birth"
+                id="date-birth"
+                type="date"
+                placeholder="mm/dd/yy"
+                data-type="date"
+                data-restrict="max"
+        />
+        <label for="date-retirement">Your projected date of retirement</label>
+        <input
+                class="ma__input-date js-input-date"
+                name="date-retirement"
+                id="date-retirement"
+                type="date"
+                placeholder="mm/dd/yy"
+                data-type="date"
+                data-restrict="min"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Select your estimated total number of years of credible service, including any purchased service or may be eligible to purchase, as of your projected date of retirement.</legend>
+        <section class="ma__select-box js-dropdown ma__select-box--optional">
+          <label
+                  for="service-years"
+                  class="ma__select-box__label">Years of service:</label>
+          <div class="ma__select-box__field">
+            <select
+                    name="service-years"
+                    id="service-years"
+                    class="ma__select-box__select js-dropdown-select ">
+              <option value="">years of service</option>
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+            </select>
+            <div class="ma__select-box__link">
+              <span class="js-dropdown-link">years of service</span>
+              <span class="ma__select-box__icon"></span></div>
+          </div>
+        </section>
+        <section class="ma__select-box js-dropdown ma__select-box--optional">
+          <label
+                  for="service-months"
+                  class="ma__select-box__label">Months of service:</label>
+          <div class="ma__select-box__field">
+            <select
+                    name="service-months"
+                    id="service-months"
+                    class="ma__select-box__select js-dropdown-select ">
+              <option value="">months of service</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <div class="ma__select-box__link">
+              <span class="js-dropdown-link">months of service</span>
+              <span class="ma__select-box__icon"></span></div>
+          </div>
+        </section>
+      </fieldset>
+
       <h2 class="ma__comp-heading" tabindex="-1">Name of Section</h2>
       <fieldset>
         <label for="your-name-23489" class="ma__label ma__label--required ">Label of field</label>
