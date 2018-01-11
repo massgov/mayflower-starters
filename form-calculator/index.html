@@ -11,7 +11,7 @@
   <!-- make sure base-theme comes after index-generated -->
   <link rel="stylesheet" href="https://mayflower.digital.mass.gov/assets/css/base-theme-generated.css" media="all" />
 
-  <!-- custom css -->
+  <!-- This is your own custom css for this widget.  Make sure it comes after mayflower styles! -->
   <link rel="stylesheet" href="/iframe-quickstart/css/form-calculator.css" media="all" />
 
   <!-- modernizr -->
@@ -169,11 +169,11 @@
         <ul class="ma__labelled-list__items ret__calculator-estimates__items">
           <li class="ma__labelled-list__item ret__calculator-estimates__item">
             <span class="ma__labelled-list__label ret__calculator-estimates__item-label">Annual allowance:</span>
-            <span class="ma__labelled-list__text ret__calculator-estimates__item-text">32,000</span>
+            <span class="ma__labelled-list__text ret__calculator-estimates__item-text js-ret-annual"></span>
           </li>
           <li class="ma__labelled-list__item ret__calculator-estimates__item">
             <span class="ma__labelled-list__label ret__calculator-estimates__item-label">Monthly allowance:</span>
-            <span class="ma__labelled-list__text ret__calculator-estimates__item-text">1,000</span>
+            <span class="ma__labelled-list__text ret__calculator-estimates__item-text js-ret-monthly"></span>
           </li>
         </ul>
       </div>
@@ -184,14 +184,18 @@
   </main>
   <!-- end form page template scaffolding -->
 
-<!-- Configure your javascript -->
+<!-- custom app js config -->
+<!-- Configure your assets paths javascript for Mayflower, make sure it comes before Mayflower js -->
 <script src="/iframe-quickstart/js/env.js"></script>
-<!--Mayflower javascript -->
-<!-- third part javascript functionality (i.e. jQuery, moment, pikaday) -->
+
+<!--Mayflower js -->
+<!--Mayflower Third part javascript functionality (i.e. jQuery, moment, pikaday) -->
 <script src="https://mayflower.digital.mass.gov/assets/js/vendor-generated.js"></script>
-<!-- mayflower custom module js (i.e. menu, accordions, form validation etc.) -->
+<!-- Mayflower custom module js (i.e. menu, accordions, form validation etc.) -->
 <script src="https://mayflower.digital.mass.gov/assets/js/index-generated.js"></script>
-<!-- Custom widget js -->
+
+<!-- Custom app js -->
+<!-- This is your custom widget js, make sure it comes after mayflower js!  -->
 <script src="/iframe-quickstart/js/form-calculator.js"></script>
 </body>
 </html>
