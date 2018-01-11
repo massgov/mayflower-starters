@@ -1,7 +1,15 @@
 .ret__calculator-estimates__item-text {
     border: 1px solid #535353;
-    display: inline-block;
+    display: block;
     padding: 5px 10px;
+    width: 100%;
+}
+
+@media (min-width: 481px){
+    .ret__calculator-estimates__item-text {
+        display: inline-block;
+        width: 200px;
+    }
 }
 
 .ret__calculator-estimates__item-text:before {
