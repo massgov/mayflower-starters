@@ -44,9 +44,6 @@
             <li class="ma__error-list__message">
               <label class="ma__error-list__label" for="service-years" aria-label="">Please fill in the years of service field.</label>
             </li>
-            <li class="ma__error-list__message">
-              <label class="ma__error-list__label" for="service-months" aria-label="">Please fill in the months of service field.</label>
-            </li>
           </ul>
         </div>
       </div>
@@ -64,6 +61,7 @@
       <h3 class="ma__comp-heading" tabindex="-1">Personal Information</h3>
       <fieldset>
         <label for="date-birth">Your date of birth</label>
+        <div class="ma__error-msg has-error">Please fill in your date of birth.</div>
         <input
                 class="ma__input-date js-input-date js-is-required"
                 name="date-birth"
@@ -74,6 +72,7 @@
                 data-restrict="max"
         />
         <label for="date-retirement">Your projected date of retirement</label>
+        <div class="ma__error-msg has-error">Please fill in your projected retirement date.</div>
         <input
                 class="ma__input-date js-input-date js-is-required"
                 name="date-retirement"
@@ -90,6 +89,7 @@
           <label
                   for="service-years"
                   class="ma__select-box__label">Years of service:</label>
+          <div class="ma__error-msg has-error">Please fill in your years of service.</div>
           <div class="ma__select-box__field">
             <select
                     name="service-years"
