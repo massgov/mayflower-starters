@@ -199,21 +199,22 @@
     <!-- end @atoms/divider -->
 
     <!-- begin custom css + js namespace for caculator estimates widget -->
-    <section class="ret__calculator-estimates js-ret-estimates">
+    <section class="ms__form-calculator js-ret-estimates">
       <!-- begin @atoms/comp-heading https://mayflower.digital.mass.gov/?p=atoms-comp-heading-subheading&view=c  -->
-      <h3 class="ma__comp-heading ret__calculator-estimates__heading" tabindex="-1">Retirement Estimates</h3>
+      <h3 class="ma__comp-heading ms__form-calculator__heading" tabindex="-1">Retirement Estimates</h3>
       <!-- end @atoms/comp-heading https://mayflower.digital.mass.gov/?p=atoms-comp-heading-subheading&view=c  -->
       <!-- begin @molecules/labelled-list https://mayflower.digital.mass.gov/?p=molecules-labelled-list&view=c  -->
-      <!-- Note: use additional custom class namespaces to add custom styles + js -->
-      <div class="ma__labelled-list ret__calculator-estimates__list">
-        <ul class="ma__labelled-list__items ret__calculator-estimates__items">
-          <li class="ma__labelled-list__item ret__calculator-estimates__item">
-            <span class="ma__labelled-list__label ret__calculator-estimates__item-label">Annual allowance:</span>
-            <span class="ma__labelled-list__text ret__calculator-estimates__item-text js-ret-annual"></span>
+      <!-- Note: use additional custom classes to add custom styles + js on top of Mayflower -->
+      <!-- Note: namespace all of your classes to avoid collision.  We strongly recommend following BEM principles: http://getbem.com/introduction/ -->
+      <div class="ma__labelled-list ms__form-calculator__list">
+        <ul class="ma__labelled-list__items ms__form-calculator__items">
+          <li class="ma__labelled-list__item ms__form-calculator__item">
+            <span class="ma__labelled-list__label ms__form-calculator__item-label">Annual allowance:</span>
+            <span class="ma__labelled-list__text ms__form-calculator__item-text js-ret-annual"></span>
           </li>
-          <li class="ma__labelled-list__item ret__calculator-estimates__item">
-            <span class="ma__labelled-list__label ret__calculator-estimates__item-label">Monthly allowance:</span>
-            <span class="ma__labelled-list__text ret__calculator-estimates__item-text js-ret-monthly"></span>
+          <li class="ma__labelled-list__item ms__form-calculator__item">
+            <span class="ma__labelled-list__label ms__form-calculator__item-label">Monthly allowance:</span>
+            <span class="ma__labelled-list__text ms__form-calculator__item-text js-ret-monthly"></span>
           </li>
         </ul>
       </div>
