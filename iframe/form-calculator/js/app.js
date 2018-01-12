@@ -14,3 +14,4 @@ $( "#ret__calculator__form" ).submit(function( event ) {
 
 });
 })(jQuery);
+// jQuery is available from vendor-generated.js

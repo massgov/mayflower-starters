@@ -1,19 +1,20 @@
 /**
- * Custom form calculator widget javascript
+ * Custom dynamic data widget javascript
  */
 (function($){
   $(".ms__dynamic-data").each(function(){
-    // cache jQuery objects
+    // Cache jQuery objects
     var $el = $(this),
         $button = $el.find(".ms__dynamic-data__button"),
         $data = $el.find(".ms__dynamic-data__output-text");
 
-    // handle click event
+    // Handle button click event
     $button.on('click',function(e){
-      // get random number (replace this with your own functionality to bring in data)
+      // Get random number (Note: replace this with your own functionality to bring in data)
       var code = Math.random().toString(36).toUpperCase().slice(8);
-      // render code;
+      // Render the data;
       $data.text(code);
     });
   });
 })(jQuery);
+// jQuery is available from vendor-generated.js
