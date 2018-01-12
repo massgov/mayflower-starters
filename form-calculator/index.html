@@ -16,17 +16,14 @@
 
   <!-- modernizr -->
   <script src="https://mayflower.digital.mass.gov/assets/js/vendor/modernizr.js"></script>
-  <script>
-    var ma = ma || {};
-  </script>
-  
 </head>
 <body>
-  <!-- begin form page template scaffolding: https://mayflower.digital.mass.gov/?p=templates-form-page -->
+  <!-- begin form page template scaffolding: https://mayflower.digital.mass.gov/?p=templates-form-page&view=c -->
   <main class="ma__form-page" id="main-content" tabindex="-1">
     <!-- begin calculator widget custom form content -->
     <!-- give your form a custom id so you can handle form submission -->
     <form class="ma__form-page ret__calculator__form" id="ret__calculator__form" action="#">
+      <!-- begin @molecules/error-list https://mayflower.digital.mass.gov/?p=molecules-error-list&view=c -->
       <div class="ma__error-list js-error-list" tabindex="-1">
         <div class="ma__error-list__container">
           <div class="ma__error-list__header">
@@ -48,21 +45,34 @@
           </ul>
         </div>
       </div>
+      <!-- end @molecules/error-list https://mayflower.digital.mass.gov/?p=molecules-error-list&view=c -->
 
+      <!-- use a fieldset to group related form controls -->
       <fieldset>
+        <!-- use a legend to describe a fieldset -->
         <legend>Please Read and Agree Before Continuing</legend>
         <p>I understand that the information and/or calculations displayed on this site do not necessarily reflect the actual amount of my retirement allowance.  The results provided by this calculator are approximations and should not be considered as the final determination of my retirement benefit.  They should not be relied upon for planning purposes.</p>
         <p><b><b>This calculator provides estimates for members entering service BEFORE April 2, 2012.</b></b></p>
+        <!-- begin @atoms/input-checkbox https://mayflower.digital.mass.gov/?p=atoms-input-checkbox&view=c -->
         <span class="ma__input-checkbox">
           <input type="checkbox" value="checkbox" id="check-test">
             <label for="check-test"><span>I agree, continue filling out form</span></label>
         </span>
+        <!-- end @atoms/input-checkbox https://mayflower.digital.mass.gov/?p=atoms-input-checkbox&view=c -->
       </fieldset>
 
+      <!-- begin @atoms/comp-heading as subheading https://mayflower.digital.mass.gov/?p=atoms-comp-heading-subheading&view=c -->
+      <!-- Your starting iframe heading level will likely be 3, depending on the parent page context -->
       <h3 class="ma__comp-heading" tabindex="-1">Personal Information</h3>
+      <!-- end @atoms/comp-heading as subheading https://mayflower.digital.mass.gov/?p=atoms-comp-heading-subheading&view=c -->
+
+      <!-- use a fieldset to group related form controls -->
       <fieldset>
+        <!-- begin @atoms/input-date (with local error message) https://mayflower.digital.mass.gov/?p=atoms-input-date&view=c -->
         <label for="date-birth">Your date of birth</label>
         <div class="ma__error-msg">Please fill in your date of birth.</div>
+        <!-- Note: ^ .ma__error-msg (.has-error added during form validation if required fields are empty) -->
+        <!-- Note: .js-is-required used below -->
         <input
                 class="ma__input-date js-input-date js-is-required"
                 name="date-birth"
@@ -72,8 +82,12 @@
                 data-type="date"
                 data-restrict="max"
         />
+        <!-- end @atoms/input-date (with local error message) https://mayflower.digital.mass.gov/?p=atoms-input-date&view=c -->
+        <!-- begin @atoms/input-date (with local error message) https://mayflower.digital.mass.gov/?p=atoms-input-date&view=c -->
         <label for="date-retirement">Your projected date of retirement</label>
         <div class="ma__error-msg">Please fill in your projected retirement date.</div>
+        <!-- Note: ^ .ma__error-msg (.has-error added during form validation if required fields are empty) -->
+        <!-- Note: .js-is-required used below -->
         <input
                 class="ma__input-date js-input-date js-is-required"
                 name="date-retirement"
@@ -83,19 +97,25 @@
                 data-type="date"
                 data-restrict="min"
         />
+        <!-- end @atoms/input-date (with local error message) https://mayflower.digital.mass.gov/?p=atoms-input-date -->
       </fieldset>
+      <!-- use a fieldset to group related form controls -->
       <fieldset>
+        <!-- use a legend to describe a fieldset -->
         <legend>Select your estimated total number of years of credible service, including any purchased service or may be eligible to purchase, as of your projected date of retirement.</legend>
+        <!-- begin @atoms/select-box https://mayflower.digital.mass.gov/?p=atoms-select-box&view=c -->
         <section class="ma__select-box js-dropdown">
           <label
                   for="service-years"
                   class="ma__select-box__label">Years of service:</label>
           <div class="ma__error-msg">Please fill in your years of service.</div>
+          <!-- Note: ^ .ma__error-msg (.has-error added during form validation if required fields are empty) -->
           <div class="ma__select-box__field">
             <select
                     name="service-years"
                     id="service-years"
                     class="ma__select-box__select js-dropdown-select js-is-required">
+              <!-- Note: ^ .js-is-required -->
               <option value="">years of service</option>
               <option value="0">0</option>
               <option value="5">5</option>
@@ -107,6 +127,8 @@
               <span class="ma__select-box__icon"></span></div>
           </div>
         </section>
+        <!-- end @atoms/select-box https://mayflower.digital.mass.gov/?p=atoms-select-box&view=c -->
+        <!-- begin @atoms/select-box https://mayflower.digital.mass.gov/?p=atoms-select-box&view=c -->
         <section class="ma__select-box ma__select-box--optional js-dropdown">
           <label
                   for="service-months"
@@ -116,6 +138,7 @@
                     name="service-months"
                     id="service-months"
                     class="ma__select-box__select js-dropdown-select">
+              <!-- ^ Note: no .js-is-required -->
               <option value="">months of service</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -134,9 +157,13 @@
               <span class="ma__select-box__icon"></span></div>
           </div>
         </section>
+        <!-- end @atoms/select-box https://mayflower.digital.mass.gov/?p=atoms-select-box&view=c -->
+        <!-- begin @atoms/helper-text https://mayflower.digital.mass.gov/?p=atoms-helper-text&view=c -->
         <label for="service-years"
                class="ma__helper-text">This should be the number of years and months you expect to have, for example, 10 years and 2 months</label>
+        <!-- end @atoms/helper-text https://mayflower.digital.mass.gov/?p=atoms-helper-text&view=c -->
       </fieldset>
+      <!-- begin @atoms/input-group-radio-inline https://mayflower.digital.mass.gov/?p=atoms-input-group-radio-inline&view=c -->
       <div class="ma__input-group ">
         <div class="ma__input-group__title">
           Are you a military veteran?
@@ -156,14 +183,27 @@
           </div>
         </div>
       </div>
+      <!-- end @atoms/input-group-radio-inline https://mayflower.digital.mass.gov/?p=atoms-input-group-radio-inline&view=c -->
       <fieldset>
+        <!-- begin @atoms/button-small https://mayflower.digital.mass.gov/?p=atoms-button-as-small&view=c -->
+        <!-- Use button with primary color to denote your primary action -->
         <button type="submit" class="ma__button ma__button--small  " aria-label="">Compute</button>
+        <!-- begin @atoms/button-small https://mayflower.digital.mass.gov/?p=atoms-button-as-small&view=c -->
       </fieldset>
     </form>
     <!-- end calculator widget custom form content -->
     <!-- begin custom widget content -->
+    <!-- begin @atoms/divider -->
+    <div class="ma__divider"></div>
+    <!-- end @atoms/divider -->
+
+    <!-- begin custom css + js namespace for caculator estimates widget -->
     <section class="ret__calculator-estimates js-ret-estimates">
+      <!-- begin @atoms/comp-heading https://mayflower.digital.mass.gov/?p=atoms-comp-heading-subheading&view=c  -->
       <h3 class="ma__comp-heading ret__calculator-estimates__heading" tabindex="-1">Retirement Estimates</h3>
+      <!-- end @atoms/comp-heading https://mayflower.digital.mass.gov/?p=atoms-comp-heading-subheading&view=c  -->
+      <!-- begin @molecules/labelled-list https://mayflower.digital.mass.gov/?p=molecules-labelled-list&view=c  -->
+      <!-- Note: use additional custom class namespaces to add custom styles + js -->
       <div class="ma__labelled-list ret__calculator-estimates__list">
         <ul class="ma__labelled-list__items ret__calculator-estimates__items">
           <li class="ma__labelled-list__item ret__calculator-estimates__item">
@@ -176,6 +216,7 @@
           </li>
         </ul>
       </div>
+      <!-- end @molecules/labelled-list https://mayflower.digital.mass.gov/?p=molecules-labelled-list&view=c  -->
     </section>
     <!-- end custom widget content -->
     <aside class="sidebar ">
