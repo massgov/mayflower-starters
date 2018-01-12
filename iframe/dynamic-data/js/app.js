@@ -16,6 +16,4 @@
       $data.text(code);
     });
   });
-// Handle the form submission
-
 })(jQuery);
