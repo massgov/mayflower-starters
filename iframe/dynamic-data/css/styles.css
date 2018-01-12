@@ -7,7 +7,7 @@
 
 .ms__dynamic-data__container {
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     text-align: center;
 }
 .ms__dynamic-data__button {
@@ -18,5 +18,6 @@
 }
 
 .ms__dynamic-data__output-text {
-    font-size: larger;
+    font-size: 40px;
+    font-weight: 700;
 }
