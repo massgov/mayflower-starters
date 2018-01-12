@@ -1,8 +1,8 @@
-.ret__calculator-estimates__item-label {
+.ms__form-calculator__item-label {
     display: block;
 }
 
-.ret__calculator-estimates__item-text {
+.ms__form-calculator__item-text {
     border: 2px solid #dcdcdc;
     color: #535353;
     display: block;
@@ -11,20 +11,20 @@
 }
 
 @media (min-width: 481px){
-    .ret__calculator-estimates__item + .ret__calculator-estimates__item {
+    .ms__form-calculator__item + .ms__form-calculator__item {
         margin-top: 10px;
     }
-    .ret__calculator-estimates__item-label {
+    .ms__form-calculator__item-label {
         display: inline-block;
         width: 210px;
     }
-    .ret__calculator-estimates__item-text {
+    .ms__form-calculator__item-text {
         display: inline-block;
         width: 200px;
     }
 }
 
-.ret__calculator-estimates__item-text:before {
+.ms__form-calculator__item-text:before {
     content: "$";
     margin-right: 5px;
 }

@@ -2,15 +2,18 @@
  * Custom form calculator widget javascript
  */
 (function($){
-// Handle the form submission
-$( "#ret__calculator__form" ).submit(function( event ) {
-  event.preventDefault();
-  // Hide the error messages if there are any (@TODO this should be handled by Mayflower js)
-  $(".js-error-list").hide();
+  $(".ms__dynamic-data").each(function(){
+    // cache jQuery objects
+    var $el = $(this),
+        $button = $el.find(".ms__dynamic-data__button"),
+        $data = $el.find(".ms__dynamic-data__output-text");
 
-  // Populate the allowance values (indicated by a custom .js-ret-* class in the markup)
-  $(".js-ret-annual").text("32,000");
-  $(".js-ret-monthly").text("2,666");
-
-});
+    // handle click event
+    $button.on('click',function(e){
+      // get random number (replace this with your own functionality to bring in data)
+      var code = Math.random().toString(36).toUpperCase().slice(8);
+      // render code;
+      $data.text(code);
+    });
+  });
 })(jQuery);
