@@ -11,7 +11,7 @@
     // handle click event
     $button.on('click',function(e){
       // get random number (replace this with your own functionality to bring in data)
-      var code = Math.random().toString(36).slice(7);
+      var code = Math.random().toString(36).toUpperCase().slice(8);
       // render code;
       $data.text(code);
     });
