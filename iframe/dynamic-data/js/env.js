@@ -3,9 +3,10 @@
  */
 var ma = ma || {};
 // path to where the handlebar templates are being stored.
-ma.themePath = "/iframe-quickstart/path/to/handlebars/templates";
+ma.themePath = "https://mayflower.digital.mass.gov/assets";
 // path to where twig templates are being stored (for twigJS).
 ma.twigPath = ma.themePath + "/patterns";
+ma.iconPath = ma.themePath + "/images/svg-icons/"
 ma.patternPaths = {
   '@base': ma.twigPath + "/00-base/",
   '@atoms': ma.twigPath + "/01-atoms/",
