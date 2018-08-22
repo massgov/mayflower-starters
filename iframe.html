@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Begin Mayflower styles -->
-    <!-- make sure index-generated comes first -->
-    <link rel="stylesheet" href="https://mayflower.digital.mass.gov/5/assets/css/index-generated.css" media="all" />
-    <!-- make sure base-theme comes after index-generated -->
-    <link rel="stylesheet" href="https://mayflower.digital.mass.gov/5/assets/css/base-theme-generated.css" media="all" />
+  <!-- Begin Mayflower styles -->
+  <!-- 6.0.0 can be changed to a newer version -->
+  <link rel="stylesheet" href="https://mayflower.digital.mass.gov/v/6.0.0/assets/css/index-generated.css" media="all" />
 
     <!-- modernizr library for feature detection: https://modernizr.com/docs -->
     <script src="https://mayflower.digital.mass.gov/assets/js/vendor/modernizr.js"></script>
@@ -287,9 +285,13 @@
       </div>
   </main>
 
-<!--Mayflower assets -->
-    <script src="https://mayflower.digital.mass.gov/5/assets/js/vendor-generated.js"></script>
-    <script src="https://mayflower.digital.mass.gov/5/assets/js/index-generated.js"></script>
+  <!-- Configure your assets paths javascript for Mayflower, make sure it comes before Mayflower js -->
+  <script src="./js/env.js"></script>
+  <!--Mayflower js -->
+  <!--Mayflower Third part javascript functionality (i.e. jQuery, moment, pikaday) -->
+  <script src="https://mayflower.digital.mass.gov/v/6.0.0/assets/js/vendor-generated.js"></script>
+  <!-- Mayflower custom module js (i.e. menu, accordions, form validation etc.) -->
+  <script src="https://mayflower.digital.mass.gov/v/6.0.0/assets/js/index-generated.js"></script>
 
   </body>
 
